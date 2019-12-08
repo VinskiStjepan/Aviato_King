@@ -1,0 +1,43 @@
+﻿@model Services.Implementation.SearchModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Check flight prices</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowData">
+            <div class="form-group">
+                    <label class="control-label">Currency</label>
+                    <select class="form-control" asp-for="CurrencyCode"
+                            asp-items="@(new SelectList(Model.Currencies,"Code","Code"))"></select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Origin Airport</label>
+                    <select class="form-control" asp-for="OriginCode"
+                            asp-items="@(new SelectList(Model.IataCodes,"Code","Code"))"></select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Destination Airport</label>
+                    <select class="form-control" asp-for="DestinationCode"
+                            asp-items="@(new SelectList(Model.IataCodes,"Code","Code"))"></select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Departure Date</label>
+                    <input type="date" asp-for="DepartureDate" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Return Date</label>
+                    <input type="date" asp-for="ReturnDate" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Number of passengers</label>
+                    <input type="number" asp-for="Passengers" class="form-control" />
+                </div>
+            <div class="form-group">
+                <input type="submit" value="ShowData" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>

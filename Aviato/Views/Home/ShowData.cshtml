@@ -1,0 +1,66 @@
+﻿@model Services.Implementation.SearchModel
+@{
+    ViewData["Title"] = "ShowData";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OriginCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinationCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartureDate) / @Html.DisplayNameFor(model => model.ReturnDate)
+            </th>
+            <th>
+                Broj presjedanja u polasku / povratku
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passengers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Currencies)
+            </th>
+            <th>
+                Cijena
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Offers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.OriginCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DestinationCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DepartureDate) / @Html.DisplayFor(model => model.ReturnDate)
+                </td>
+                <td>
+                    @item.Services[0].Segments.Count() / @item.Services[1].Segments.Count()
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Passengers)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CurrencyCode)
+                </td>
+                <td>
+                    @item.Price.Total
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

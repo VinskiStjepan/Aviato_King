@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aviato", "Aviato\Aviato.csproj", "{FA10D877-07A7-4491-908F-BA327FA9F04D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{70F5D15B-4378-4C3D-AFFE-3BC5631DF5B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{8E87F03F-9171-4C6A-86B8-C39CE5D918CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA10D877-07A7-4491-908F-BA327FA9F04D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA10D877-07A7-4491-908F-BA327FA9F04D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA10D877-07A7-4491-908F-BA327FA9F04D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA10D877-07A7-4491-908F-BA327FA9F04D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F5D15B-4378-4C3D-AFFE-3BC5631DF5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F5D15B-4378-4C3D-AFFE-3BC5631DF5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F5D15B-4378-4C3D-AFFE-3BC5631DF5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F5D15B-4378-4C3D-AFFE-3BC5631DF5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E87F03F-9171-4C6A-86B8-C39CE5D918CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E87F03F-9171-4C6A-86B8-C39CE5D918CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E87F03F-9171-4C6A-86B8-C39CE5D918CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E87F03F-9171-4C6A-86B8-C39CE5D918CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C38AEF04-6564-4842-8900-C34E8DA333B2}
+	EndGlobalSection
+EndGlobal
